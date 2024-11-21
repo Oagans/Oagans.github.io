@@ -7,9 +7,53 @@
 
     <link href="./output.css" rel="stylesheet">
 </head>
-<body>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+<body class="bg-dark-bg">
+    <section class="max-w-full">
+        <video class="absolute top-0 left-0 w-full h-full object-cover -z-10" autoplay muted loop>
+            <source src="./videos/bg-video-energy.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+
+        <header class="p-4">
+            <div class="max-w-7xl mx-auto flex items-center justify-between">
+                <!-- Logo -->
+                <div>
+                    <a href=""><img src="./imgs/Logo_voltaris_verde.png" alt="Logo voltaris verde"></a>
+                </div>
+
+                <!-- Menu para telas grandes -->
+                <nav class="hidden md:flex space-x-8 font-text text-lg lg:text-xl transition-colors">
+                    <a href="#" class="text-white hover:text-main-green">Home</a>
+                    <a href="#" class="text-white hover:text-main-green">Sobre</a>
+                    <a href="#" class="text-white hover:text-main-green">Serviços</a>
+                    <a href="#" class="text-white hover:text-main-green">Contato</a>
+                </nav>
+
+
+                <!-- Menu sanduíche -->
+                <div class="md:hidden flex items-center">
+                    <button id="menuButton" class="text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Menu móvel -->
+            <div id="mobileMenu" class="md:hidden hidden ">
+                <nav
+                    class="space-y-4 flex flex-col p-4 mt-4 w-full font-text bg-[rgba(77,41,93,0.46)] rounded-[16px] shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur-[12.9px] border border-[rgba(77,41,93,1)]">
+                    <a href="#" class="text-white hover:text-main-green text-right ">Home</a>
+                    <a href="#" class="text-white hover:text-main-green text-right">Sobre</a>
+                    <a href="#" class="text-white hover:text-main-green text-right">Serviços</a>
+                    <a href="#" class="text-white hover:text-main-green text-right">Contato</a>
+                </nav>
+            </div>
+        </header>
+
+    </section>
 </body>
 </html>
